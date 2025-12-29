@@ -8,7 +8,7 @@ projects = [
         "name": "Personal Portfolio",
         "description": "Portfolio built with Flask.",
         "tech": "Flask, HTML, CSS",
-        "link": "https://github.com/juhi/portfolio"
+        "link": "https://github.com/2611006/portfolio"
     },
     {
         "name": "Civil Engineer Website",
@@ -43,4 +43,5 @@ def contact():
 # This line ensures Vercel can run the Flask app
 if __name__ == "__main__":
     app.run()
+
 
