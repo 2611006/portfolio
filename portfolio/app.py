@@ -5,12 +5,6 @@ app = Flask(__name__)
 # Your projects data here
 projects = [
     {
-        "name": "Personal Portfolio",
-        "description": "Portfolio built with Flask.",
-        "tech": "Flask, HTML, CSS",
-        "link": "https://github.com/2611006/portfolio"
-    },
-    {
         "name": "Civil Engineer Website",
         "description": "A civil engineer having a business for the same, i made website including all details",
         "tech": "Python, Tkinter",
@@ -21,6 +15,12 @@ projects = [
         "description": "Specifically designed for CSE and DA branch though to practice each subject with levels of difficulty according to needs",
         "tech": "Python, Flask, API",
         "link": "https://gate-rho.vercel.app/"
+    },
+    {
+        "name": "Personal Portfolio",
+        "description": "Portfolio built with Flask.",
+        "tech": "Flask, HTML, CSS",
+        "link": "This Website"
     }
 ]
 
@@ -43,5 +43,6 @@ def contact():
 # This line ensures Vercel can run the Flask app
 if __name__ == "__main__":
     app.run()
+
 
 
