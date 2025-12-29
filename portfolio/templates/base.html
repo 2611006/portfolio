@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juhi Vanjara | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <div class="logo">Juhi Vanjara</div>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="floating-shapes">
+    <div class="shape" style="width: 40px; height:40px; left: 10%; animation-duration: 20s;"></div>
+    <div class="shape triangle" style="left: 30%; animation-duration: 25s;"></div>
+    <div class="shape hexagon" style="left: 50%; animation-duration: 30s;"></div>
+    <div class="shape" style="width: 50px; height:50px; left: 70%; animation-duration: 22s;"></div>
+    <div class="shape triangle" style="left: 90%; animation-duration: 28s;"></div>
+</div>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        &copy; 2025 Juhi Vanjara. All rights reserved.
+    </footer>
+</body>
+</html>
