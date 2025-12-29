@@ -2,25 +2,13 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Sample projects data
+# Your projects data here
 projects = [
     {
-        "name": "Portfolio Website",
-        "description": "My personal portfolio built with Flask and HTML/CSS.",
+        "name": "Personal Portfolio",
+        "description": "Portfolio built with Flask.",
         "tech": "Flask, HTML, CSS",
-        "link": "This website"
-    },
-    {
-        "name": "Civil Engineer Website",
-        "description": "A civil engineer having a business for the same, i made website including all details",
-        "tech": "Python, Tkinter",
-        "link": "https://bpn-port-smih.vercel.app/about"
-    },
-    {
-        "name": "Gate Exam Series",
-        "description": "Specifically designed for CSE and DA branch though to practice each subject with levels of difficulty according to needs",
-        "tech": "Python, Flask, API",
-        "link": "https://gate-rho.vercel.app/"
+        "link": "https://github.com/juhi/portfolio"
     }
 ]
 
@@ -40,5 +28,6 @@ def projects_page():
 def contact():
     return render_template("contact.html")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# This line ensures Vercel can run the Flask app
+if __name__ == "__main__":
+    app.run()
