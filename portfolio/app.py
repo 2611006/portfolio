@@ -8,13 +8,13 @@ projects = [
         "name": "Civil Engineer Website",
         "description": "A civil engineer having a business for the same, i made website including all details",
         "tech": "Python, Flask, CSS",
-        "link": "https://bpn-port-smih.vercel.app/"
+        "link": "https://bpn-portfo-107.vercel.app/"
     },
     {
         "name": "Gate Exam Series",
         "description": "Specifically designed for CSE and DA branch though to practice each subject with levels of difficulty according to needs",
         "tech": "Python, Flask, HTML",
-        "link": "https://gate-rho.vercel.app/"
+        "link": "https://gate-rho-seven.vercel.app/"
     },
     {
         "name": "Personal Portfolio",
@@ -43,6 +43,7 @@ def contact():
 # This line ensures Vercel can run the Flask app
 if __name__ == "__main__":
     app.run()
+
 
 
 
